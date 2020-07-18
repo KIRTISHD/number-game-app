@@ -30,4 +30,11 @@ export class StartComponent implements OnInit {
     }
   }
 
+  handleevent(event){
+    if(event.keyCode === 13)
+    {
+      this.startGame();
+    }
+  }
+
 }
