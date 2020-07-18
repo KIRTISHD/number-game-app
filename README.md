@@ -1,5 +1,7 @@
 # NumberMemory
 
+This is a memory game to see how many digit numbers you can remember.  
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
 
 ## Development server
