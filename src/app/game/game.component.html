@@ -15,7 +15,7 @@
         <section class="section-container centerFlex">
             <div class="main-container">
                 <h1 class="number-header">What was the number? </h1>
-                <input type="text" class="number-input" [(ngModel)]="usernumber">
+                <input type="number" class="number-input" [(ngModel)]="usernumber">
             </div>
             <button type="button" (click)="checkNumber()" (keydown.enter)="checkNumber()">Submit</button>
         </section>
