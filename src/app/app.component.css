@@ -1,0 +1,13 @@
+
+.footer-class {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+} 
+
+.footer-class h5 {
+    display:inline-block;
+    font-size: 1rem;
+} 

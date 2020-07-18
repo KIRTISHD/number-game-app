@@ -51,7 +51,7 @@
 
 input::placeholder{
     color: rgba(255, 255, 255, 0.5);
-  }
+}
 
   @media only screen and (max-width: 600px) {
     body {
@@ -77,4 +77,10 @@ input::placeholder{
         margin-top: 20px;
         width: 100%;
     }
+  }
+
+  @media only screen and (max-height: 500px) {
+      .container{
+          padding-top: 50px;
+      }
   }
