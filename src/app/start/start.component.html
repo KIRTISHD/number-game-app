@@ -1,0 +1,15 @@
+<div class="container">
+    <header>
+        <div class="header-container centerFlex">
+            <h1 class="start-header">Welcome to the Numbers Memory Game</h1>
+            <!-- <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="John Doe">
+            </mat-form-field> -->
+            <input type="text" class="name-input" placeholder=" Enter your name" [(ngModel)]="name">
+            <a class='start-btn hvr-back-pulse' (click)="startGame()">
+                Start
+            </a>
+        </div>
+    </header>
+</div>

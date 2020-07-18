@@ -1,0 +1,48 @@
+.container {
+    padding-top: 10%;
+}
+
+.section-container {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.main-container {
+    text-align: center;
+}
+
+.centerFlex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.final-header{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.final-number-header{
+    margin-top: 20px;
+    font-size: 36px;
+    color: yellow;
+}
+
+.final-button{
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 0.5rem 2rem;
+    background-color: yellow;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.final-level-header{
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
