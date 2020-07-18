@@ -1,25 +1,4 @@
-/*container{
-    width: 100%;
-}
 
-.header-container{
-    text-align: center;
-    padding: 0 2rem;
-    position: absolute;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-
-.example-full-width {
-    width: 100%;
-}*/
 .container {
     padding-top: 17%;
 }
@@ -48,6 +27,7 @@
     margin: 10px;
     font-size: large;
     margin: 20px;
+    text-align: center;
 }
 
 .start-header {
@@ -55,6 +35,7 @@
     line-height: 1.1;
     color: aliceblue;
     margin: 20px;
+    text-align: center;
 }
 
 .name-input {
@@ -64,14 +45,36 @@
     border-radius: 100px;
     background: rgba(0, 0, 100, 0.2);
     border: 1px solid #4c00ff;
-    /* border-width: 0px !important;
-    border-style: initial !important;
-    border-color: initial !important;
-    border-image: initial !important; */
     outline: 0px !important;
     background: none;
 }
 
 input::placeholder{
     color: rgba(255, 255, 255, 0.5);
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+      overflow: visible;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .start-header{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .start-btn{
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+    }
+    .name-input{
+        margin-top: 20px;
+        width: 100%;
+    }
   }
