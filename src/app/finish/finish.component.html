@@ -1,12 +1,14 @@
 <div class="container">
     <section class="section-container centerFlex">
         <div class="main-container">
-            <h1 class="final-level-header">Congratulations!! You could remember {{level}} digit numbers. </h1>
+            <h1 *ngIf="level != 0 && yourNumber == null" class="final-level-header">Congratulations!! You could remember {{level}} digit numbers. </h1>
+            <h1 *ngIf="level == 0" class="final-level-header">Wow. You couldn't even remember 1 digit!!</h1>
             <h1 class="final-header">Actual Number was </h1>
             <h2 class="final-number-header">{{actualNumber}}</h2>
             
             <h1 class="final-header">Your Number was </h1>
-            <h2 class="final-number-header">{{yourNumber}}</h2>
+            <h2 *ngIf="yourNumber != null" class="final-number-header">{{yourNumber}}</h2>
+            <h2 *ngIf="yourNumber == null" class="final-number-header">BLANK</h2>
         </div>
 
         <button [routerLink]="['/']" routerLinkActive="router-link-active" class="final-button">Play Again</button>

@@ -25,6 +25,6 @@ export class FinishComponent implements OnInit {
     const temp = JSON.parse(localStorage.getItem('temp-numbers'));
     this.actualNumber = temp.actualNumber;
     this.yourNumber = temp.yourNumber;
-    this.level = temp.level;
+    this.level = temp.level - 1;
   }
 }
