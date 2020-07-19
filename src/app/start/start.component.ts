@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../services/user.service';
 
@@ -10,6 +10,7 @@ import { UserService } from '../services/user.service';
 export class StartComponent implements OnInit {
   name: string;
 
+  
   constructor(private router: Router, private userService: UserService) { }
 
   ngOnInit(): void {
@@ -21,7 +22,7 @@ export class StartComponent implements OnInit {
       alert("Please enter your name");
     }
     else if (this.name.length > 10 || this.name.length < 3) {
-      alert('username length should be between 3 and 10');
+      alert('length of name should be between 3 and 10');
       this.name = '';
     }
     else{

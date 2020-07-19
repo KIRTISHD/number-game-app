@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../services/user.service';
 
@@ -8,6 +8,9 @@ import { UserService } from '../services/user.service';
   styleUrls: ['./game.component.css']
 })
 export class GameComponent implements OnInit {
+
+  
+  // @ViewChild('numberfield') private elementRef: ElementRef;
 
   actualNumber: number;
   showMode: boolean;
@@ -23,6 +26,10 @@ export class GameComponent implements OnInit {
   ngOnInit(): void {
     this.showModeOn();
   }
+
+  // public ngAfterViewInit(): void {
+  //   this.elementRef.nativeElement.focus();
+  // }
 
   showModeOn() {
     this.showMode = true;
@@ -68,6 +75,13 @@ export class GameComponent implements OnInit {
       this.userService.storeNumber(this.actualNumber, this.usernumber, this.level);
       this.router.navigate(['/finish']);
       return;
+    }
+  }
+
+  handleevent(event){
+    if(event.keyCode === 13)
+    {
+      this.checkNumber();
     }
   }
 }

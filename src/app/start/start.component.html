@@ -6,7 +6,7 @@
                 <mat-label>Name</mat-label>
                 <input matInput placeholder="John Doe">
             </mat-form-field> -->
-            <input type="text" class="name-input" placeholder=" Enter your name" [(ngModel)]="name">
+            <input type="text" class="name-input" placeholder=" Enter your name" [(ngModel)]="name" autofocus #namefield> {{namefield.focus()}}
             <a class='start-btn hvr-back-pulse' (click)="startGame()" >
                 Start
             </a>
