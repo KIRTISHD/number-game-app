@@ -16,20 +16,6 @@
     flex-direction: column;
 }
 
-.start-btn {
-    top: 10px;
-    display: inline-block;
-    color: #fff;
-    padding: 1rem 4rem;
-    background-color: lightgreen;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-    font-size: large;
-    margin: 20px;
-    text-align: center;
-}
-
 .start-header {
     font-size: 3rem;
     line-height: 1.1;
@@ -47,6 +33,20 @@
     border: 1px solid #4c00ff;
     outline: 0px !important;
     background: none;
+}
+
+.start-btn {
+    top: 10px;
+    display: inline-block;
+    color: #fff;
+    padding: 1rem 4rem;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: large;
+    margin: 20px;
+    text-align: center;
 }
 
 input::placeholder{
@@ -68,15 +68,17 @@ input::placeholder{
         width: 100%;
     }
     
+    .name-input{
+        margin-top: 20px;
+        width: 80%;
+        font-size: 30px;
+    }
+
     .start-btn{
         margin-top: 50px;
         text-align: center;
-        width: 100%;
+        width: 80%;
         background-color: green;
-    }
-    .name-input{
-        margin-top: 20px;
-        width: 100%;
     }
   }
 
@@ -98,5 +100,6 @@ input::placeholder{
         padding: 0.5rem 2rem;
         font-size:medium;
         margin: 10px;
+        width: 80%;
     }
   }
