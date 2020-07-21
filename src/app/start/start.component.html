@@ -1,6 +1,9 @@
 <div class="container" (keydown)="handleevent($event)">
     <header>
         <div class="header-container centerFlex">
+            <a class='start-btn hvr-back-pulse' [routerLink]="['/highscores']" routerLinkActive="router-link-active"  >
+                HighScore
+            </a>
             <h1 class="start-header">Welcome to the Numbers Memory Game</h1>
             <!-- <mat-form-field class="example-full-width">
                 <mat-label>Name</mat-label>

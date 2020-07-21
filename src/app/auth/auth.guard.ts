@@ -8,6 +8,7 @@ export class AuthGuard implements CanActivate {
     constructor( private router: Router, private userService: UserService) {}
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | import("@angular/router").UrlTree | import("rxjs").Observable<boolean | import("@angular/router").UrlTree> | Promise<boolean | import("@angular/router").UrlTree> {
+        console.log('inside guard');
         if (this.userService.verifyStorage()) {
             return true;
         }
@@ -15,6 +16,7 @@ export class AuthGuard implements CanActivate {
             this.router.navigate(['/']);
             return false;
         }
+        
     }
 
 }

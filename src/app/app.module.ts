@@ -8,17 +8,19 @@ import { GameComponent } from './game/game.component';
 import { FinishComponent } from './finish/finish.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from "@angular/forms";
-
+import { HttpClientModule } from "@angular/common/http";
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { ScoreComponent } from './score/score.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartComponent,
     GameComponent,
-    FinishComponent
+    FinishComponent,
+    ScoreComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { MatInputModule } from '@angular/material/input';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

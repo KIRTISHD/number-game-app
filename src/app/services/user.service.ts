@@ -44,4 +44,8 @@ export class UserService {
   storeNumber(actualNumber: number, yourNumber: number, level:number) {
     localStorage.setItem('temp-numbers',JSON.stringify({actualNumber: actualNumber, yourNumber: yourNumber, level: level}));
   }
+  
+  getUsername() {
+    return localStorage.getItem('username');
+  }
 }
